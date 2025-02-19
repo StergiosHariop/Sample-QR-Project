@@ -4,8 +4,12 @@ body {
   justify-content: center;
   height: 100vh;
   font-family: "Outfit", serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .qr-code {
+  min-width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,17 +28,20 @@ body {
   border-radius: 20px;
 
   img {
-    width: 288px;
-    height: 288px;
+    width: 90%; /* Make the image responsive */
+    height: auto;
     border-radius: 10px;
   }
 }
 .qr-code-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 0px 32px;
+  gap: 16px;
 }
 
 .p-one {
@@ -47,5 +54,15 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #68778D;
-  margin: 16px 0px 0px 0px;
+  margin: 0px;
+}
+
+@media (max-width: 320px) {
+  body {
+    min-width: 320px;
+  }
+
+  .qr-code {
+    min-width: 320px;
+  }
 }
