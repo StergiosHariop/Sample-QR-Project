@@ -14,7 +14,7 @@ The challenge is to build out this QR code component and get it looking as close
 https://stergioshariop.github.io/Sample-QR-Project/
 
 - Basic HTML & CSS
-- Breakpoints for responsiveness across screens
+- Figma Design used
 
 ## The design
 
